@@ -1,0 +1,4 @@
+Building:EBU3D/floor:2/Room:201/AHU:SB-AHU,>Room:202/VAV:229A,>VAV:228B
+Building:EBU3D/floor:2/Room:203/AHU:SB-AHU2,>Room:203/VAV:230A,>VAV:28BC
+Building:EBU3D/floor:2/Room:201/AHU:SB-AHU/THERMOSTAT:TSTAT2
+Building:EBU3D/floor:2/Room:201/AHU:SB-AHU/THERMOSTAT:TSTAT2/Air_Temperature_Sensor:sensor1234

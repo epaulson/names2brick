@@ -1,0 +1,17 @@
+start : brick_name
+brick_name : part1 (PSEP part2)*
+REL: "[hasPoint]"i | "[hasPart]"i | "[isLocationOf]"i | "[feeds]"i | "/" | ">"
+part1 : entity (REL entity)*
+entity: TYPE CSEP ID
+part2: REL entity (REL entity)*
+
+CSEP: ":"
+PSEP: ","
+
+TYPE: (LETTER|"_")+
+ID: (LETTER|DIGIT|"-"|"_")+
+%import common.DIGIT
+%import common.LETTER
+%import common.WS
+%ignore WS
+
