@@ -39,7 +39,7 @@ ex:VFD4 a brick:VFD ;
 ex:EM4 a brick:Electrical_Meter .
 ```
 
-The name is built out of multiple segments such as 'Building:EBU3B' and 'Chilled_Water_System:3B'. Each of these segments is a type and an identifier, seperated by a ':'. The type is assumed to come from the Brick ontology. For now, the identifier should be unique, e.g. "Pump:4" and "VFD:4" should not both use '4' as their identifier.  
+The name is built out of multiple segments such as 'Building:EBU3B' and 'Chilled_Water_System:3B'. Each of these segments is a type and an identifier, separated by a ':'. The type is assumed to come from the Brick ontology. For now, the identifier should be unique, e.g. "Pump:4" and "VFD:4" should not both use '4' as their identifier.  
 
 Each segment is connected via a '/' character. That is shorthand for a relationship. The tool uses the [Brick Relationships Guide](https://brickschema.org/relationships) to determine which type of relationship the '/' character should represent, depending on the type of the entities on either side of the '/'. 
 
@@ -68,7 +68,7 @@ Consider this example:
 
 ```Building:EBU3D/floor:2/Room:203/AHU:SB-AHU2```
 
-In this example, the entity named is ```AHU:SB-AHU2```. The addtitional entities listed make up the 'fully qualified names' and are expanded into the full graph, but in some instances where we want to identify a single entity, the last entity is used. 
+In this example, the entity named is ```AHU:SB-AHU2```. The additional entities listed make up the 'fully qualified names' and are expanded into the full graph, but in some instances where we want to identify a single entity, the last entity is used. 
 
 This is useful for being able to attach additional relationships onto an identifier. For example, this name
 
